@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +21,8 @@ public class LoginStepDefinition{
 	
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
-	 System.setProperty("webdriver.chrome.driver","/Users/naveenkhunteta/Downloads/chromedriver");
+		 //System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
+		 WebDriverManager.chromedriver().setup();
 	 driver = new ChromeDriver();
 	 driver.get("https://www.freecrm.com/index.html");
 	 }

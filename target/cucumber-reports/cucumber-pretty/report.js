@@ -60,7 +60,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "naveenk",
+        "neeraj",
         "test@123"
       ],
       "line": 15,
@@ -89,7 +89,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters \"naveenk\" and \"test@123\"",
+  "name": "user enters \"neeraj\" and \"test@123\"",
   "matchedColumns": [
     0,
     1
@@ -115,52 +115,48 @@ formatter.match({
   "location": "LoginStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 10242175386,
-  "status": "passed"
+  "duration": 247059700,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: F:\\Users\\naveenkhunteta\\Downloads\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat stepDefinitions.LoginStepDefinition.user_already_on_login_page(LoginStepDefinition.java:23)\r\n\tat ✽.Given user is already on Login Page(login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 9733303,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "naveenk",
+      "val": "neeraj",
       "offset": 13
     },
     {
       "val": "test@123",
-      "offset": 27
+      "offset": 26
     }
   ],
   "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 258433060,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 11333726997,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_is_on_hopme_page()"
 });
 formatter.result({
-  "duration": 6375672,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 87683080,
-  "status": "passed"
+  "status": "skipped"
 });
 });
