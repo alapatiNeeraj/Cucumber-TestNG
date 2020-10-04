@@ -24,7 +24,7 @@ public class LoginStepDefinition{
 		 //System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
 		 WebDriverManager.chromedriver().setup();
 	 driver = new ChromeDriver();
-	 driver.get("https://www.freecrm.com/index.html");
+	 driver.get("https://classic.crmpro.com/index.html");
 	 }
 	
 	
