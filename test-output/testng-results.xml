@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="885" started-at="2020-10-04T16:56:23Z" finished-at="2020-10-04T16:56:24Z">
+  <suite name="Suite" duration-ms="11742" started-at="2020-10-04T17:06:13Z" finished-at="2020-10-04T17:06:25Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="feature" class="MyRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="FREE CRM Test" duration-ms="885" started-at="2020-10-04T16:56:23Z" finished-at="2020-10-04T16:56:24Z">
+    <test name="Test" duration-ms="11742" started-at="2020-10-04T17:06:13Z" finished-at="2020-10-04T17:06:25Z">
       <class name="MyRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="setUpClass" is-config="true" duration-ms="362" started-at="2020-10-04T16:56:23Z" finished-at="2020-10-04T16:56:24Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="setUpClass" is-config="true" duration-ms="385" started-at="2020-10-04T17:06:13Z" finished-at="2020-10-04T17:06:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="feature" duration-ms="314" started-at="2020-10-04T16:56:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-04T16:56:24Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="feature" duration-ms="11146" started-at="2020-10-04T17:06:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-04T17:06:25Z">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: F:\Users\naveenkhunteta\Downloads\chromedriver]]>
+              <![CDATA[java.lang.AssertionError: expected [Free CRM #1 cloud software for any business large or small] but found [Free CRM in the cloud software boosts sales]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.IllegalStateException: The driver executable does not exist: F:\Users\naveenkhunteta\Downloads\chromedriver
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Free CRM #1 cloud software for any business large or small] but found [Free CRM in the cloud software boosts sales]
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at MyRunner.TestRunner.feature(TestRunner.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -43,35 +43,38 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.IllegalStateException: The driver executable does not exist: F:\Users\naveenkhunteta\Downloads\chromedriver
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at stepDefinitions.LoginStepDefinition.user_already_on_login_page(LoginStepDefinition.java:23)
-at ✽.Given user is already on Login Page(login.feature:5)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: expected [Free CRM #1 cloud software for any business large or small] but found [Free CRM in the cloud software boosts sales]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at stepDefinitions.LoginStepDefinition.title_of_login_page_is_free_CRM(LoginStepDefinition.java:35)
+at ✽.When title of login page is Free CRM(login.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="tearDownClass" is-config="true" duration-ms="38" started-at="2020-10-04T16:56:24Z" finished-at="2020-10-04T16:56:24Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@5bcab519]" name="tearDownClass" is-config="true" duration-ms="35" started-at="2020-10-04T17:06:25Z" finished-at="2020-10-04T17:06:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- MyRunner.TestRunner -->
-    </test> <!-- FREE CRM Test -->
-  </suite> <!-- BDD Test Suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
